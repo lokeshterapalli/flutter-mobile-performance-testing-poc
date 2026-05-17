@@ -1,0 +1,269 @@
+{
+  "uuid": "f6f2fe9e-5394-4415-bb66-d49a1ddb9647",
+  "lastMigration": 33,
+  "name": "Density Salon App Test (copy)",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "386e25de-af7f-41e6-b94f-29eb4a5f3352",
+      "type": "http",
+      "documentation": "Create Login API",
+      "method": "post",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "c3a6ee9d-2574-44b7-852f-a4855e22ec8f",
+          "body": "{\r\n  \"status\": \"success\",\r\n  \"message\": \"Login Successful\",\r\n  \"token\": \"abc123token\",\r\n  \"user\": {\r\n    \"id\": 1,\r\n    \"name\": \"Lokesh\",\r\n    \"role\": \"Admin\"\r\n  }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "cb0defca-e0d1-4869-9bb2-c16ad48454ad",
+      "type": "http",
+      "documentation": "Create Employee API",
+      "method": "get",
+      "endpoint": "employees",
+      "responses": [
+        {
+          "uuid": "48678706-db06-4fee-8331-526b0a911c9c",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Rahul\",\n    \"role\": \"Hair Stylist\",\n    \"salary\": 45000,\n    \"store\": \"Hyderabad Salon\",\n    \"experience\": 5\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Sneha\",\n    \"role\": \"Beautician\",\n    \"salary\": 40000,\n    \"store\": \"Bangalore Salon\",\n    \"experience\": 3\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Arjun\",\n    \"role\": \"Manager\",\n    \"salary\": 60000,\n    \"store\": \"Chennai Salon\",\n    \"experience\": 7\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "e91f3eda-8d54-4564-b427-808b96888509",
+      "type": "http",
+      "documentation": "Create Store API",
+      "method": "get",
+      "endpoint": "stores",
+      "responses": [
+        {
+          "uuid": "32d7d00c-5220-4e64-8a07-b716016ed977",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Hyderabad Salon\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Bangalore Salon\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Chennai Salon\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Mumbai Salon\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Pune Salon\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "eedfe7b8-c41b-4087-905a-0cb7a69078d9",
+      "type": "http",
+      "documentation": "Create Salary API",
+      "method": "get",
+      "endpoint": "salary",
+      "responses": [
+        {
+          "uuid": "565cd4cd-e93d-45ab-8e75-001ff05af652",
+          "body": "[\n  {\n    \"employeeId\": 1,\n    \"month\": \"January\",\n    \"salary\": 45000,\n    \"bonus\": 5000\n  },\n  {\n    \"employeeId\": 1,\n    \"month\": \"February\",\n    \"salary\": 45000,\n    \"bonus\": 3000\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "cf050e90-964c-4aeb-b261-324434f2b5f4",
+      "type": "http",
+      "documentation": "Create Holiday API",
+      "method": "get",
+      "endpoint": "holidays",
+      "responses": [
+        {
+          "uuid": "c78892a7-2854-4cc3-aa7b-aef8e875cb6a",
+          "body": "[\n  {\n    \"date\": \"2026-01-01\",\n    \"holiday\": \"New Year\"\n  },\n  {\n    \"date\": \"2026-08-15\",\n    \"holiday\": \"Independence Day\"\n  },\n  {\n    \"date\": \"2026-10-02\",\n    \"holiday\": \"Gandhi Jayanti\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "8a512268-c74b-48b9-8fd2-c6783515d929",
+      "type": "http",
+      "documentation": "Create Leave Booking API",
+      "method": "post",
+      "endpoint": "leave-booking",
+      "responses": [
+        {
+          "uuid": "c8cace07-ec22-4587-a29d-887f9fc24c7f",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Leave request submitted successfully\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "386e25de-af7f-41e6-b94f-29eb4a5f3352"
+    },
+    {
+      "type": "route",
+      "uuid": "cb0defca-e0d1-4869-9bb2-c16ad48454ad"
+    },
+    {
+      "type": "route",
+      "uuid": "e91f3eda-8d54-4564-b427-808b96888509"
+    },
+    {
+      "type": "route",
+      "uuid": "eedfe7b8-c41b-4087-905a-0cb7a69078d9"
+    },
+    {
+      "type": "route",
+      "uuid": "cf050e90-964c-4aeb-b261-324434f2b5f4"
+    },
+    {
+      "type": "route",
+      "uuid": "8a512268-c74b-48b9-8fd2-c6783515d929"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
